@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <title>EMI Calculator</title>
 </head>
 
 <body>
     <div class="container">
-
+        <div class="heading">EMI CALCULATOR</div>
+        <div class="range-container">
+            <div class="range-head">AMOUNT</div>
+            <input type="range" class="slider" min="0" max="10000000">
+            <div class="range-values"></div>
+        </div>
+        <div class="range-container">
+            <div class="range-head">INTEREST</div>
+            <input type="range" class="slider" min="0" max="50">
+        </div>
+        <div class="range-container">
+            <div class="range-head">MONTHS</div>
+            <input type="range" class="slider" min="0" max="60">
+        </div>
+        <div class="result">00000</div>
     </div>
 </body>
 
