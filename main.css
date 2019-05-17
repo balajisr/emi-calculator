@@ -40,6 +40,24 @@ body {
 
 .range-head {
     font-size: 10px;
+    width: 100%;
+    display: block;
+}
+
+.range-left,
+.range-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.range-left {
+    width: 30%;
+    margin-right: -10px;
+}
+
+.range-right {
+    width: 70%;
+    text-align: right;
 }
 
 .slider {
