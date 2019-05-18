@@ -22,7 +22,7 @@ body {
     padding: 15px;
     margin: 0;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -31,7 +31,7 @@ body {
 .heading {
     text-align: center;
     font-size: 19px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .range-container {
