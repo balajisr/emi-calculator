@@ -11,10 +11,11 @@ const enterMonths = document.getElementById('enter-months');
 let calculateEMI = () => {
     console.log('clicked');
     let amountValue = amount.value;
-    let interestValue = interest.value;
     let monthsValue = months.value;
+    let interestValue = interest.value;
+    let interestRate = interestValue * (monthsValue / 100);
 
-    let EMI = [amountValue * interestValue * Math.pow((1 + interestValue), monthsValue)] / [Math.pow((1 + interestValue), (monthsValue - 1))];
+    let EMI = [amountValue * interestRate * Math.pow((1 + interestRate), monthsValue)] / [Math.pow((1 + interestRate), (monthsValue - 1))];
     enterAmount.innerHTML = amountValue;
     enterInterest.innerHTML = interestValue;
     enterMonths.innerHTML = monthsValue;
