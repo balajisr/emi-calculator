@@ -44,6 +44,7 @@ let resetEMI = () => {
     amount.value = 0;
     months.value = 0;
     interest.value = 0;
+    finalValue.innerHTML = "0.00";
 }
 
 amount.addEventListener('click', calculateEMI);
