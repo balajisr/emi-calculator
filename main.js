@@ -7,6 +7,7 @@ const finalValue = document.getElementById('final-value');
 const enterAmount = document.getElementById('enter-amount');
 const enterInterest = document.getElementById('enter-interest');
 const enterMonths = document.getElementById('enter-months');
+const reset = document.getElementById('reset');
 
 function localeString(x, sep, grp) {
     var sx = ('' + x).split('.'),
@@ -39,9 +40,16 @@ let calculateEMI = () => {
     finalValue.innerHTML = localeString(EMI.toFixed(2));
 }
 
+let resetEMI = () => {
+    amount.value = 0;
+    months.value = 0;
+    interest.value = 0;
+}
+
 amount.addEventListener('click', calculateEMI);
 interest.addEventListener('click', calculateEMI);
 months.addEventListener('click', calculateEMI);
 amount.addEventListener('change', calculateEMI);
 interest.addEventListener('change', calculateEMI);
 months.addEventListener('change', calculateEMI);
+reset.addEventListener('click', resetEMI);
