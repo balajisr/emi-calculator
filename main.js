@@ -44,6 +44,9 @@ let resetEMI = () => {
     amount.value = 0;
     months.value = 0;
     interest.value = 0;
+    enterAmount.innerHTML = 0;
+    enterInterest.innerHTML = 0;
+    enterMonths.innerHTML = 0;
     finalValue.innerHTML = "0.00";
 }
 
